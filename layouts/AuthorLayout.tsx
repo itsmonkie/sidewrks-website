@@ -22,7 +22,7 @@ export default function AuthorLayout({ children, content }: Props) {
           <div className="mb-6">
             <h3 className="pb-2 text-2xl leading-8 font-bold tracking-tight">{name}</h3>
             {(occupation || company) && (
-              <div className="space-y-1 text-gray-500 dark:text-gray-400">
+              <div className="space-y-1 text-gray-600 dark:text-gray-400">
                 {occupation && <div>{occupation}</div>}
                 {company && <div>{company}</div>}
               </div>
