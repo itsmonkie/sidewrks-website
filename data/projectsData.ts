@@ -3,6 +3,7 @@ interface Project {
   description: string
   status: 'idea' | 'building' | 'live' | 'paused' | 'killed'
   href?: string
+  imgSrc?: string
 }
 
 const projectsData: Project[] = [
