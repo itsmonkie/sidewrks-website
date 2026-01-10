@@ -45,7 +45,6 @@ If something does not directly support shipping or learning, it is out of scope.
 
 - `/projects/[slug]`  
   Project detail pages containing:
-
   - What it is
   - Why it exists
   - Current scope

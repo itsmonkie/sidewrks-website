@@ -7,38 +7,39 @@
 /* Core theme configuration */
 @theme {
   /* Font families */
-  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+  --font-sans:
+    var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
   /* Colors - Muted green, neutral-first palette */
   /* Background: #F7F8F6, Surface: #FFFFFF, Primary text: #1F2933, Secondary text: #5F6B5A */
   /* Borders: #E3E7E2, Accent: #5B7F6A, Accent hover: #4A6A58 */
-  
+
   /* Primary (accent) colors - muted green */
-  --color-primary-50: #F0F4F2;
-  --color-primary-100: #D8E4DD;
-  --color-primary-200: #B8CFC4;
-  --color-primary-300: #8FB3A3;
-  --color-primary-400: #6A9582;
-  --color-primary-500: #5B7F6A;
-  --color-primary-600: #4A6A58;
-  --color-primary-700: #3D5749;
-  --color-primary-800: #34473C;
-  --color-primary-900: #2D3B32;
-  --color-primary-950: #1A2520;
+  --color-primary-50: #f0f4f2;
+  --color-primary-100: #d8e4dd;
+  --color-primary-200: #b8cfc4;
+  --color-primary-300: #8fb3a3;
+  --color-primary-400: #6a9582;
+  --color-primary-500: #5b7f6a;
+  --color-primary-600: #4a6a58;
+  --color-primary-700: #3d5749;
+  --color-primary-800: #34473c;
+  --color-primary-900: #2d3b32;
+  --color-primary-950: #1a2520;
 
   /* Gray scale - neutral with slight green tint */
-  --color-gray-50: #F7F8F6;
-  --color-gray-100: #F0F2EF;
-  --color-gray-200: #E3E7E2;
-  --color-gray-300: #D1D7CD;
-  --color-gray-400: #B5BEB0;
-  --color-gray-500: #9AA390;
-  --color-gray-600: #5F6B5A;
-  --color-gray-700: #4A5348;
-  --color-gray-800: #3A4139;
-  --color-gray-900: #1F2933;
-  --color-gray-950: #0F1419;
+  --color-gray-50: #f7f8f6;
+  --color-gray-100: #f0f2ef;
+  --color-gray-200: #e3e7e2;
+  --color-gray-300: #d1d7cd;
+  --color-gray-400: #b5beb0;
+  --color-gray-500: #9aa390;
+  --color-gray-600: #5f6b5a;
+  --color-gray-700: #4a5348;
+  --color-gray-800: #3a4139;
+  --color-gray-900: #1f2933;
+  --color-gray-950: #0f1419;
 
   /* Line heights */
   --line-height-11: 2.75rem;
