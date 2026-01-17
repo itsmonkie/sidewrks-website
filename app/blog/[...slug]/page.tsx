@@ -70,6 +70,9 @@ export async function generateMetadata(props: {
       description: post.summary,
       images: imageList,
     },
+    alternates: {
+      canonical: post.canonicalUrl || './',
+    },
   }
 }
 
