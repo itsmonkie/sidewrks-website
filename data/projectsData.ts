@@ -12,7 +12,7 @@ const projectsData: Project[] = [
     description:
       'A simple decision log for recording decisions, commitments, and outcomes over time. Designed to make progress and thinking visible, privately or in public.',
     status: 'building',
-    href: '/projects/build-on-record',
+    href: 'https://buildonrecord.com',
   },
   {
     title: 'Sidewrks',
