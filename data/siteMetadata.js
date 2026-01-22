@@ -34,9 +34,8 @@ const siteMetadata = {
     },
   },
 
-  // Day-one recommendation: no newsletter
   newsletter: {
-    provider: '', // set later if you add one
+    provider: 'buttondown',
   },
 
   // Day-one recommendation: no comments
