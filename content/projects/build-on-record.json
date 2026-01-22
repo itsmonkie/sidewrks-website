@@ -1,0 +1,37 @@
+{
+  "slug": "build-on-record",
+  "title": "Build on Record",
+  "tagline": "A simple decision log for recording decisions, commitments, and outcomes over time.",
+  "honestFraming": {
+    "whatItIs": "A lightweight tool for capturing decisions and tracking what happens next. Designed to make progress and thinking visible, privately or in public.",
+    "whatItIsNot": "Not a project management tool. Not trying to replace your existing workflow—just adds a thin layer of accountability."
+  },
+  "audience": {
+    "whoItsFor": [
+      "Solo builders who want to document their journey",
+      "People who struggle to remember why they made certain decisions",
+      "Anyone who wants public accountability without the noise"
+    ],
+    "whoItsNotFor": [
+      "Teams looking for collaboration features",
+      "People who need complex project management",
+      "Those who prefer real-time social interaction"
+    ]
+  },
+  "status": "building",
+  "currentState": "Core functionality is in development. Working on the decision logging interface and basic public sharing features.",
+  "lastUpdated": "2025-01-22",
+  "artefacts": [],
+  "experiments": [
+    {
+      "title": "Public decision logs",
+      "description": "Testing whether making decisions public creates useful accountability",
+      "signalLookingFor": "Do users return to update their logs? Do they share them?",
+      "status": "active"
+    }
+  ],
+  "links": {
+    "homepage": "https://buildonrecord.com"
+  },
+  "seoDescription": "Build on Record is a simple decision log for recording decisions, commitments, and outcomes over time. Make your progress visible."
+}

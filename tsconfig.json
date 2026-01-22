@@ -18,9 +18,11 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
+      "@/content/*": ["content/*"],
       "@/data/*": ["data/*"],
       "@/layouts/*": ["layouts/*"],
       "@/css/*": ["css/*"],
+      "@/lib/*": ["lib/*"],
       "contentlayer/generated": ["./.contentlayer/generated"],
       "pliny/*": ["node_modules/pliny/*"]
     },

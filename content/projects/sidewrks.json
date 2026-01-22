@@ -1,0 +1,38 @@
+{
+  "slug": "sidewrks",
+  "title": "Sidewrks",
+  "tagline": "A quiet workspace for shipping side projects and learning from real outcomes.",
+  "honestFraming": {
+    "whatItIs": "A personal site documenting what gets built, paused, or killed. A place to be honest about side projects—what worked, what didn't, and why.",
+    "whatItIsNot": "Not a portfolio of polished successes. Not trying to impress—just trying to learn and share openly."
+  },
+  "audience": {
+    "whoItsFor": [
+      "Other builders curious about honest project journeys",
+      "People tired of seeing only success stories",
+      "Anyone interested in the messy middle of side projects"
+    ],
+    "whoItsNotFor": [
+      "Those looking for a startup template or playbook",
+      "People who want quick tips without context",
+      "Anyone expecting polished case studies"
+    ]
+  },
+  "status": "live",
+  "currentState": "The site is live and actively updated with blog posts, project updates, and experiments in building.",
+  "lastUpdated": "2025-01-22",
+  "artefacts": [],
+  "experiments": [
+    {
+      "title": "Writing in public",
+      "description": "Publishing thoughts and learnings about side projects as they happen",
+      "signalLookingFor": "Does writing help clarify thinking? Does it resonate with others?",
+      "status": "active"
+    }
+  ],
+  "links": {
+    "homepage": "/",
+    "x": "https://x.com/sidewrks"
+  },
+  "seoDescription": "Sidewrks is a quiet workspace for shipping side projects and learning from real outcomes. Honest documentation of what gets built, paused, or killed."
+}
