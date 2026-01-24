@@ -31,7 +31,8 @@
     }
   ],
   "links": {
-    "homepage": "https://buildonrecord.com"
+    "homepage": "https://buildonrecord.com",
+    "buildOnRecordLog": "https://www.buildonrecord.com/log/sidewrks/build-on-record"
   },
   "seoDescription": "Build on Record is a simple decision log for recording decisions, commitments, and outcomes over time. Make your progress visible."
 }

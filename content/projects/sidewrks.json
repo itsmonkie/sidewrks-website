@@ -32,7 +32,8 @@
   ],
   "links": {
     "homepage": "/",
-    "x": "https://x.com/sidewrks"
+    "x": "https://x.com/sidewrks",
+    "buildOnRecordLog": "https://www.buildonrecord.com/log/sidewrks/sidewrks"
   },
   "seoDescription": "Sidewrks is a quiet workspace for shipping side projects and learning from real outcomes. Honest documentation of what gets built, paused, or killed."
 }

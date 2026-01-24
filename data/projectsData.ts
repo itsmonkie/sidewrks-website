@@ -8,6 +8,13 @@ interface Project {
 
 const projectsData: Project[] = [
   {
+    title: 'rcordr',
+    description:
+      'A lightweight tool for recording activity, outcomes, and metrics, and tracking progress against goals.',
+    status: 'building',
+    href: 'https://rcordr.com',
+  },
+  {
     title: 'Build on Record',
     description:
       'A simple decision log for recording decisions, commitments, and outcomes over time. Designed to make progress and thinking visible, privately or in public.',

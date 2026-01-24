@@ -1,0 +1,31 @@
+{
+  "slug": "rcordr",
+  "title": "rcordr",
+  "tagline": "Record activity, track progress, measure what matters",
+  "honestFraming": {
+    "whatItIs": "A lightweight tool for recording activity, outcomes, and metrics, and tracking progress against goals.",
+    "whatItIsNot": "A full productivity suite, habit coach, or opinionated life system."
+  },
+  "audience": {
+    "whoItsFor": [
+      "people who care about productivity",
+      "individuals tracking goals",
+      "people measuring progress"
+    ],
+    "whoItsNotFor": [
+      "people looking for heavy automation",
+      "teams wanting complex reporting",
+      "anyone expecting motivation or coaching"
+    ]
+  },
+  "status": "building",
+  "currentState": "Free app with a very basic feature set, focused on manual recording and simple goal tracking.",
+  "lastUpdated": "2025-01-24",
+  "artefacts": [],
+  "experiments": [],
+  "links": {
+    "homepage": "https://rcordr.com",
+    "buildOnRecordLog": "https://www.buildonrecord.com/log/sidewrks/rcordr"
+  },
+  "seoDescription": "rcordr is a lightweight productivity and self-tracking tool for recording activity, tracking goals, and measuring progress over time."
+}

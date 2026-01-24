@@ -1,8 +1,9 @@
 import { Project, ProjectCard } from '@/content/projects/types'
+import rcordr from '@/content/projects/rcordr.json'
 import buildOnRecord from '@/content/projects/build-on-record.json'
 import sidewrks from '@/content/projects/sidewrks.json'
 
-const projects: Project[] = [buildOnRecord as Project, sidewrks as Project]
+const projects: Project[] = [rcordr as Project, buildOnRecord as Project, sidewrks as Project]
 
 export function getAllProjects(): Project[] {
   return projects
