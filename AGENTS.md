@@ -1,5 +1,15 @@
 # Agent Rules
 
+## Before Pushing
+
+**Always run build and lint before pushing:**
+
+```bash
+yarn build
+```
+
+This runs linting as part of the build. Do not push if there are errors.
+
 ## Package Manager
 
 Use `yarn` for all package management commands:
