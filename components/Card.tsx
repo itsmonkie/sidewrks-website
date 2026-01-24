@@ -2,10 +2,8 @@ import Image from './Image'
 import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
-  <div className="md max-w-[544px] p-4 md:w-1/2 flex">
-    <div
-      className="flex h-full flex-col overflow-hidden rounded-md border-2 border-gray-200/60 dark:border-gray-700/60"
-    >
+  <div className="md flex max-w-[544px] p-4 md:w-1/2">
+    <div className="flex h-full flex-col overflow-hidden rounded-md border-2 border-gray-200/60 dark:border-gray-700/60">
       {imgSrc &&
         (href ? (
           <Link href={href} aria-label={`Link to ${title}`}>
@@ -36,7 +34,9 @@ const Card = ({ title, description, imgSrc, href }) => (
             title
           )}
         </h2>
-        <p className="prose mb-3 max-w-none flex-grow text-gray-600 dark:text-gray-400">{description}</p>
+        <p className="prose mb-3 max-w-none flex-grow text-gray-600 dark:text-gray-400">
+          {description}
+        </p>
         {href && (
           <Link
             href={href}
