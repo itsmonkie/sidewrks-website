@@ -68,7 +68,9 @@ export default function PrivacyPolicy() {
         </ul>
 
         <h2>Contact</h2>
-        <p>Questions? Reach out via the contact details on the About page.</p>
+        <p>
+          Questions? Email <a href="mailto:contact@sidewrks.com">contact@sidewrks.com</a>.
+        </p>
       </div>
     </div>
   )

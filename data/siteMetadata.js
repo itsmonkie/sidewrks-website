@@ -16,7 +16,7 @@ const siteMetadata = {
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/social-card.png`,
 
   // Keep only the socials you will actually link to on day one
-  email: '', // optional
+  email: 'contact@sidewrks.com',
   github: '', // e.g. https://github.com/<your-handle>
   linkedin: '', // e.g. https://www.linkedin.com/in/<your-handle>
   x: '', // optional
