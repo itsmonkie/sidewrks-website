@@ -2,7 +2,7 @@ import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({
   title: 'Privacy Policy',
-  description: 'Privacy policy for Sidewrks - how we handle your data.',
+  description: 'Privacy policy for Sidewrks.',
 })
 
 export default function PrivacyPolicy() {
@@ -17,85 +17,58 @@ export default function PrivacyPolicy() {
         </p>
       </div>
       <div className="prose dark:prose-invert max-w-none pt-8 pb-8">
-        <h2>Overview</h2>
-        <p>
-          Sidewrks is a personal website and blog. I respect your privacy and aim to be transparent
-          about any data collection. This policy explains what information is collected and how it
-          is used.
-        </p>
+        <p>This site collects minimal data. Here is what you should know.</p>
 
-        <h2>Information collected</h2>
-
-        <h3>Analytics</h3>
-        <p>
-          This site uses Google Analytics to understand how visitors use the site. This service
-          collects anonymous usage data including pages visited, time spent on the site, and general
-          geographic location. This data helps me understand what content is useful and improve the
-          site.
-        </p>
-        <p>
-          Google Analytics uses cookies to collect this information. You can opt out of Google
-          Analytics by using the{' '}
-          <a
-            href="https://tools.google.com/dlpage/gaoptout"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google Analytics Opt-out Browser Add-on
-          </a>
-          .
-        </p>
-
-        <h3>Newsletter</h3>
-        <p>
-          If you subscribe to the newsletter, your email address is collected and stored by
-          Buttondown, the newsletter service provider. Your email is used solely to send you
-          updates. You can unsubscribe at any time using the link in any newsletter email.
-        </p>
-
-        <h3>Hosting</h3>
-        <p>
-          This site is hosted on Vercel. Vercel may collect standard server logs including IP
-          addresses for security and performance monitoring. See{' '}
-          <a
-            href="https://vercel.com/legal/privacy-policy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vercel&apos;s privacy policy
-          </a>{' '}
-          for more details.
-        </p>
+        <h2>What we collect</h2>
+        <ul>
+          <li>
+            <strong>Analytics:</strong> Google Analytics collects anonymous usage data (pages
+            visited, general location). No personal information is collected.
+          </li>
+          <li>
+            <strong>Newsletter:</strong> If you subscribe, your email is stored by Buttondown. You
+            can unsubscribe anytime.
+          </li>
+          <li>
+            <strong>Hosting:</strong> Vercel collects standard server logs for security purposes.
+          </li>
+        </ul>
 
         <h2>Cookies</h2>
-        <p>
-          This site uses cookies for analytics purposes as described above. No cookies are used for
-          advertising or tracking across other websites.
-        </p>
-
-        <h2>Third-party links</h2>
-        <p>
-          This site may contain links to external websites. I am not responsible for the privacy
-          practices of those sites.
-        </p>
+        <p>This site uses cookies for analytics only. No advertising or cross-site tracking.</p>
 
         <h2>Your rights</h2>
-        <p>
-          You have the right to request access to, correction of, or deletion of any personal data I
-          hold about you. If you have subscribed to the newsletter, you can unsubscribe at any time.
-        </p>
+        <p>You can request access to, correction of, or deletion of your data at any time.</p>
 
-        <h2>Changes to this policy</h2>
-        <p>
-          This privacy policy may be updated from time to time. Any changes will be posted on this
-          page with an updated revision date.
-        </p>
+        <h2>Third-party services</h2>
+        <ul>
+          <li>
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+              Google Analytics Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://buttondown.com/legal/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Buttondown Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://vercel.com/legal/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Vercel Privacy Policy
+            </a>
+          </li>
+        </ul>
 
         <h2>Contact</h2>
-        <p>
-          If you have any questions about this privacy policy, please reach out via the contact
-          details on the About page.
-        </p>
+        <p>Questions? Reach out via the contact details on the About page.</p>
       </div>
     </div>
   )
