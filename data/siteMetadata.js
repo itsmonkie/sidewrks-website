@@ -38,9 +38,21 @@ const siteMetadata = {
     provider: 'buttondown',
   },
 
-  // Day-one recommendation: no comments
   comments: {
-    provider: '', // set later if you decide to enable them
+    provider: 'giscus',
+    giscusConfig: {
+      repo: 'itsmonkie/sidewrks-website',
+      repositoryId: 'R_kgDOQ1d6TQ',
+      category: 'Blog Comments',
+      categoryId: 'DIC_kwDOQ1d6Tc4C1uhF',
+      mapping: 'pathname',
+      strict: '1',
+      reactions: '1',
+      metadata: '0',
+      theme: 'light',
+      darkTheme: 'dark',
+      lang: 'en',
+    },
   },
 
   // Keep kbar search if you like (it’s useful once notes/projects grow)
