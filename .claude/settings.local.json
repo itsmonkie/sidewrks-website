@@ -60,7 +60,16 @@
       "Bash(npm run dev:*)",
       "Bash(yarn dev)",
       "Bash(yarn build:*)",
-      "Bash(npx prettier:*)"
+      "Bash(npx prettier:*)",
+      "Bash(bd version:*)",
+      "Bash(bd upgrade:*)",
+      "Bash(brew outdated:*)",
+      "Bash(brew info:*)",
+      "Bash(git -C /Users/matthewwhetton/Source/Github/sidewrks-website status)",
+      "Bash(git -C /Users/matthewwhetton/Source/Github/sidewrks-website diff)",
+      "Bash(git -C /Users/matthewwhetton/Source/Github/sidewrks-website log --oneline -5)",
+      "Bash(git -C /Users/matthewwhetton/Source/Github/sidewrks-website add data/blog/building-rcordr-without-knowing-where-it-goes.mdx app/tag-data.json .claude/settings.local.json)",
+      "Bash(git -C /Users/matthewwhetton/Source/Github/sidewrks-website commit -m \"$\\(cat <<''EOF''\nAdd rcordr article and update tag data\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }
