@@ -1,7 +1,7 @@
 {
-  "rcordr": 1,
-  "building-in-public": 2,
+  "rcordr": 2,
+  "building-in-public": 3,
+  "side-projects": 5,
   "announcement": 2,
-  "build-on-record": 1,
-  "side-projects": 4
+  "build-on-record": 1
 }
