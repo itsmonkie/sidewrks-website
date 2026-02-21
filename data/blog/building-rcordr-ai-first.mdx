@@ -1,0 +1,119 @@
+---
+title: 'Building rcordr AI-First'
+date: '2026-02-21'
+lastmod: '2026-02-21'
+tags: ['rcordr', 'side-projects', 'building-in-public']
+draft: false
+summary: "I rebuilt rcordr with AI at the centre of the workflow, not the edges. The leverage is real, but the edge is not about tooling. It is about clarity of thought, fast iteration, and learning from others."
+images: []
+authors: ['default']
+---
+
+## I Built rcordr The Traditional Way
+
+The first version of rcordr was built in broadly the same way I have built products for years, but with a bit more freedom. It was a personal project, so there was no formal roadmap or carefully groomed backlog. Instead, it evolved iteratively and exploratorily. I would build something, live with it, spot what felt clumsy, and reshape it.
+
+Even so, the underlying approach was familiar. I wrote the code, reviewed it, and owned it end to end. The system largely lived in my head, and every architectural decision passed directly through me.
+
+AI tools were present, but they sat at the edges. I experimented a little with Cursor, and I had Copilot in the editor. I used the occasional prompt to generate boilerplate or sense check an approach. Sometimes that was genuinely helpful. Occasionally it was impressive. But it was still peripheral to the workflow.
+
+I was still the one designing, structuring, and stitching everything together. AI sped up small pieces of work, but it did not materially change how I built.
+
+That version shipped. It worked. It was solid and pragmatic.
+
+And if I am honest, it felt comfortable.
+
+## I Decided To Go AI-First
+
+The shift came later, and it was deliberate.
+
+I wanted to see what would happen if I stopped treating AI as a helper on the edges and instead made it central to how I built. Not as a gimmick, and not because everyone else was talking about it, but as a genuine experiment in leverage.
+
+So I flipped the workflow.
+
+Rather than sketching the structure myself and asking AI to fill in gaps, I would describe the outcome I wanted and let it propose the structure. Instead of writing every class and function from scratch, I would start with intent and iterate on what came back.
+
+That changed the dynamic. I was no longer just generating snippets. I was shaping direction, refining constraints, and steering trade offs.
+
+AI became involved in design decisions, larger refactors, debugging awkward edge cases, and scaffolding entirely new features. It felt less like autocomplete and more like working with a very fast junior engineer who has read a vast amount but still needs clear guidance.
+
+When I was vague, the output was vague. When I was precise, the results were surprisingly strong.
+
+That alone sharpened my own thinking.
+
+## rcordr Became The Testbed
+
+This was not experimentation in a sandbox. rcordr is a real product with real constraints.
+
+It has messy edges. It has UX compromises. It has data model decisions that looked sensible at the time and then needed revisiting. In other words, it is normal software.
+
+I used the AI-first approach to reshape parts of the data model, rework UI components, introduce new features, and clean up earlier shortcuts. Some changes were incremental. Others were fairly invasive.
+
+What stood out was the speed of iteration. I could explore multiple approaches in the time it would previously have taken to implement one. That did not remove the need for judgement, but it widened the option space.
+
+Shipping regularly kept it honest. If something was brittle, it surfaced quickly. If a refactor was too clever, it became obvious when I had to extend it a week later.
+
+AI-first in that context was not theoretical. It was tested against delivery pressure, usability concerns, and the reality of maintaining something that people actually use.
+
+## I Explored The Ecosystem
+
+Naturally, I went further than just prompting in an editor.
+
+I explored orchestration layers, agent tooling, and more structured frameworks that promise repeatable pipelines and autonomous task handling. There are some genuinely strong ideas emerging around task decomposition, tool usage, and structured context.
+
+It is easy to see where this is heading.
+
+But I also found myself spending time maintaining the machinery. Updating wrappers. Adjusting to API changes. Debugging the orchestration rather than the product.
+
+In a larger organisation with repeatable workflows, some of that investment may well pay off. In a small product like rcordr, it often felt like overhead.
+
+I have seen this pattern before in engineering teams. We introduce layers to create order and scale. Sometimes they do. Sometimes they introduce friction that outweighs the benefit.
+
+With AI tooling, the churn is still high. That makes heavy abstraction slightly risky unless you have a clear return in mind.
+
+## What Actually Worked
+
+What worked, for me, was simpler.
+
+I used Claude Code directly. I kept orchestration minimal. Where I needed structure, I wrote thin, purpose built scripts. Nothing elaborate. Just enough to reduce repetition.
+
+The core loop was straightforward:
+
+- Be clear about intent.
+- Generate a first pass.
+- Review critically.
+- Refine through tight iterations.
+
+Short feedback loops mattered more than elaborate setup. If something felt cumbersome, I simplified it. If a layer did not earn its place, I removed it.
+
+That mirrors how I try to run teams. Keep things lean. Optimise for flow. Add process only where it solves a real problem.
+
+AI-first does not require a complex stack. It requires clarity of thought and a willingness to iterate quickly.
+
+## The Real Edge Is Community
+
+The biggest acceleration did not come from tooling. It came from people.
+
+Watching how friends structure prompts. Seeing colleagues share small workflow tweaks. Comparing notes on what breaks and why. That has been disproportionately valuable.
+
+A minor change in phrasing can improve output quality significantly. A small adjustment in how you stage context can reduce back and forth.
+
+Given how quickly this space is moving, it is unrealistic to think any one person will master it alone. The learning curve compresses when you share openly and learn from others' experiments.
+
+It feels similar to earlier shifts I have lived through in fintech, whether around cloud adoption or DevOps practices. The patterns stabilise socially before they stabilise technically.
+
+## It's Still Moving
+
+I am under no illusion that my current setup is final.
+
+The tooling will evolve. Some of what feels effective today will look clumsy in a year. New abstractions will emerge. Others will quietly disappear.
+
+But the shift itself feels durable.
+
+I now build rcordr AI-first. I reach for AI at the start of a problem, not as an afterthought. I enjoy the act of building more than I expected, partly because the iteration cycle is faster and partly because the collaboration feels different.
+
+The leverage is real. So are the trade offs.
+
+For me, the edge is not about betting on a specific framework or workflow. It is about staying adaptable, keeping the stack lean, and continuing to learn in public.
+
+That mindset, more than any particular tool, is what has made the difference.
