@@ -1,0 +1,76 @@
+---
+title: 'When good enough is the right call'
+date: '2026-02-28'
+lastmod: '2026-02-28'
+tags: ['rcordr', 'side-projects', 'building-in-public']
+draft: false
+summary: "Good enough is not a low bar. It is a precise bar. The threshold moves based on what you are trying to learn next, and getting it right is one of the harder skills in building anything."
+images: ['/static/images/when-good-enough-is-the-right-call.png']
+authors: ['default']
+---
+
+![When good enough is the right call](/static/images/when-good-enough-is-the-right-call.png)
+
+I spent three weeks reworking the data model in rcordr earlier this year.
+
+It needed doing. The original structure was flat in a way that had started to create real friction. Entries of different types were being treated identically, which made it harder to reason about what the data actually meant. The refactor was not gold-plating. It was a legitimate problem.
+
+But somewhere in week two, I crossed a line I did not notice crossing. The core issue was fixed. What followed was refinement for its own sake. A cleaner abstraction here. A more elegant relationship there. I was still shipping, still making real changes, but the marginal value had dropped significantly. I was optimising a system that was already good enough for where the product was.
+
+I shipped the refactor. I do not regret it. But it taught me something about how hard it is to call "good enough" correctly, and how the answer changes depending on context.
+
+## Good enough is not a fixed point
+
+The threshold moves based on what you are trying to learn next.
+
+If the next thing you need to learn is whether people will use your product at all, then the bar for technical quality is quite low. It needs to work. It does not need to be elegant. Spending weeks on a clean data model before you have a single real user is almost always the wrong call.
+
+If the next thing you need to learn is whether people will pay for it, the bar is a bit higher. Reliability matters more. Edge cases that would embarrass you in front of a paying customer need to be addressed.
+
+If you are trying to scale, the bar moves again.
+
+The mistake I see most often, and make myself, is applying a future-state quality bar to a present-state problem. Building for scale when you have not yet confirmed people want the thing. Refining the onboarding when you do not yet know if anyone will reach it.
+
+## How I try to make the call on rcordr
+
+The question I ask myself is: what does this need to do right now, for the users it has right now?
+
+rcordr has a small number of real users. It is a personal tracking tool with modest scope. That means the bar for acceptable quality is different to what it would be if it had thousands of daily active users or was processing sensitive data at volume.
+
+When I am deciding whether something is good enough, I try to be specific about what "good" means in the current context. Not abstractly good. Not good for a hypothetical future state. Good enough to support the next real step.
+
+If the next step is letting a few more people in, I need it to be reliable and understandable to someone who is not me. I do not need it to be architecturally pristine.
+
+If the next step is adding a feature that relies on a clean abstraction, then maybe the refactor earns its place. But it earns it because of the concrete next step, not because clean code is inherently virtuous.
+
+## The cost of undershooting is real too
+
+I want to be careful not to make this sound like an argument for always shipping the minimum.
+
+Undershooting has genuine costs. Technical debt that compounds. Embarrassing moments when something breaks in front of a user who could have been retained. A codebase that becomes genuinely painful to work in, which slows everything down.
+
+I have also worked in systems that were so tangled by accumulated shortcuts that adding a simple feature required touching six different places and hoping nothing broke. That cost is not hypothetical.
+
+So the goal is not to always do less. It is to match quality to context. To be honest about which things genuinely need to be better before the next step, and which things are being refined because refining feels safer than shipping.
+
+## The day job version of this problem
+
+At work, the same tension exists but with higher stakes and more people involved.
+
+The equivalent trap is over-engineering early architecture for a problem that is not yet well understood. Building a system that can handle ten times the current load before you have confirmed product-market fit. Adding abstraction layers that will theoretically make future development easier, while slowing down present development enough that you never reach the future they were built for.
+
+I have made this mistake. I have also seen it made at significant cost.
+
+The teams that get this right tend to have a clear shared answer to: what are we trying to learn in the next four weeks? That question changes what "good enough" means. It makes the conversation about quality less abstract and more tractable.
+
+## How I know I have crossed the line
+
+There are a few signs I have started watching for.
+
+The first is when I can no longer articulate a specific user-facing benefit to what I am doing. If the improvement is entirely internal and I cannot explain why it matters to the person using the product right now, it is probably not the right use of time.
+
+The second is when I start deferring the thing I am actually nervous about. Refactoring the data model instead of letting a real user in. Tidying the API instead of writing the article that invites feedback. Polishing something comfortable instead of shipping the thing that will test whether any of it matters.
+
+The third is when I find myself moving the definition of "done" forward in real time. It will be ready when this is fixed, and then when that is cleaner, and then when this edge case is handled. That is often a sign that I am avoiding something, not improving something.
+
+Good enough is not a low bar. It is a precise bar. Getting it right is one of the harder skills in building anything.
