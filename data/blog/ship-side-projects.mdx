@@ -1,0 +1,46 @@
+---
+title: "Most side projects never ship. That's the problem."
+date: '2026-03-14'
+lastmod: '2026-03-14'
+tags: ['side-projects', 'building-in-public']
+draft: false
+summary: "Most of the valuable things I have learned from building came from the projects that made it to production. The gap between shipping and not shipping is where the real lessons live."
+images: ['/static/images/ship-side-projects.png']
+authors: ['default']
+---
+
+![Most side projects never ship](/static/images/ship-side-projects.png)
+
+Most of the valuable things I have learned from building came from the projects that made it to production. That sounds obvious. It is less obvious when you look at how most side projects actually end -- quietly, in a private repository, with the builder having convinced themselves they needed a bit more time.
+
+I have done it both ways. rcordr is live. I use it daily. Decision Buddy, an app I built years ago to help people make decisions using a bitwise comparison method, made it to production too. Some other projects did not. The gap in what I learned is not small.
+
+## What production forces on you
+
+The Decision Buddy story is instructive, mostly because it involves a clear mistake and a real cost.
+
+I pushed a deployment during a marketing campaign. I did not check things properly afterwards -- the assumption was that it had gone fine. It had not. The web app was completely broken. We ran the campaign, spent the money, and got almost no sign-ups. The broken deployment was the reason.
+
+What that taught me was not, at its core, about deployment checklists. It was about attention. There is a particular failure mode in side projects where you treat deployment as an event rather than a transition. You ship, you move on, you assume the thing is working because nothing has visibly exploded. Fire and forget. The problem is that nothing tells you it is broken until someone hits it.
+
+Paying attention after you ship is a different discipline to shipping. On a side project, where you cannot sit watching dashboards all day because you have a full-time job, this is genuinely difficult. The version of it I have settled on is: check deliberately, communicate quickly, and do not panic. Users are usually more forgiving than the situation feels. The main thing they want is acknowledgement and some indication that you are aware. Don't take it personally, and don't take it too seriously -- but do take it.
+
+## Why most projects stop before this point
+
+The projects I have built that never reached production failed for different reasons. Some were overambitious for a first release -- the scope kept expanding because I was unwilling to ship something partial. Some got displaced by something more important. Some I just lost interest in.
+
+But the most common pattern, and the one I recognise most honestly in myself, is a reluctance to be seen before the thing is ready. There is a version of polish that is genuinely about quality. There is another version that is about avoiding exposure. The second version is fear wearing craft as a disguise.
+
+Reid Hoffman's line is relevant here: if you are not embarrassed by the first version you ship, you waited too long. The embarrassment is the point. It means you shipped before the fear won.
+
+Being part of a community of people building things helps with this more than any mindset reframe. Knowing that other people are shipping imperfect things, openly, lowers the stakes to something manageable.
+
+## What production actually teaches
+
+The rcordr lessons have been different from the Decision Buddy ones, but the underlying pattern is the same. You cannot fully understand what you have built until real people are using it under real conditions. The gap between how you modelled the thing and how it actually gets used is invisible until production makes it visible.
+
+Managing a side project in production, alongside a full-time job, also teaches you something specific about proportionality. Problems feel larger at 10pm when you are tired than they are. Users who are frustrated are not always right, but they are always worth listening to. The skill is taking the signal seriously without taking the friction personally.
+
+That particular calibration -- present but not precious, responsive but not reactive -- is not something I could have developed without something live that people actually depended on, even a little.
+
+The projects that stayed private did not teach me that.
