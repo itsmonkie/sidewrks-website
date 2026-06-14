@@ -1,0 +1,48 @@
+---
+title: 'The line moved into my own work'
+date: '2026-06-14'
+lastmod: '2026-06-14'
+tags: ['side-projects', 'building-in-public', 'build-on-record']
+draft: false
+summary: 'I used to think the interesting question about AI and building was about other people. Then I noticed the line between technical and non-technical builders had quietly moved through my own work.'
+images: ['/static/images/the-line-moved-into-my-own-work.jpg']
+authors: ['default']
+---
+
+![The line moved into my own work](/static/images/the-line-moved-into-my-own-work.jpg)
+
+There are parts of what I ship that I could not rebuild from scratch. I am a technical person. I have the repos, the deploy pipelines, the years of debugging habits. And there are still layers in my own projects I do not fully hold in my head.
+
+For a while I thought the interesting question about AI and building was about other people. Non-technical builders, shipping things they could not have shipped a year ago, walking into a dependency they cannot see. I kept trying to write that piece. It never sat right, because I was writing about a group I watch rather than one I am in.
+
+Then I noticed the line I was drawing between us had quietly moved through my own work.
+
+## What I actually understand
+
+When I built Build on Record, I shipped it in about two weeks. Some of it I wrote and understand completely. Some of it the tool stood up, and I read it, nodded, and moved on. There are chunks of the infrastructure config and parts of the framework I have never had to learn properly, because I never had to. It works. I could not reconstruct all of it on my own.
+
+That is not a confession of incompetence. It is the normal condition now. I am still technical. But the share of any given project that I could rebuild from memory has dropped, and it has dropped because the tool let it.
+
+The honest version of "non-technical builder" was never a type of person. It was a relationship to a piece of work: you can operate it, you cannot reconstruct it. By that definition I am non-technical in parts of my own stack. So is almost everyone shipping with these tools, including the people who would object hardest to the label.
+
+## The divide stopped being between people
+
+The old picture had a wall in it. Technical people on one side, building from understanding. Non-technical people on the other, assembling things they could not maintain. AI was supposed to be the thing that let the second group cross over.
+
+That is not what happened. The wall did not move sideways to let more people across. It turned ninety degrees and ran into each project instead. Now every build has a line through it. On one side, the parts you own. On the other, the parts you borrowed and would have to relearn under pressure.
+
+Where that line falls depends on the person and the project, not on whether you can code. A non-technical builder might borrow almost the whole thing. I borrow less. But I borrow, and the proportion is rising, and pretending otherwise would be the dishonest part.
+
+## What this changes about the worry
+
+The danger talk assumes the risk sits with a category of person. Non-technical builders are exposed; technical builders are safe. That framing lets me off the hook, which is exactly why I distrust it.
+
+If the line runs through the work rather than between people, then the question is not whether you are technical. It is whether you know where your own line falls. I can ship something and not know which parts I could defend if they broke. That is the real exposure, and it is invisible precisely to the people most confident they do not have it.
+
+The skill that matters now is not holding the whole system in your head. Nobody does that anymore, and the people who claim to are usually working on smaller things than they think. The skill is knowing where your understanding stops. Not closing the gap, which is mostly not worth the time, but mapping it. Knowing which parts of your own project you are renting.
+
+## Where this leaves me
+
+I am not going to go back and learn every line the tool wrote for me. That would defeat the point of using it, and most of it I will never need to touch. The trade is worth it. I shipped more in six months than in the three years before, and I do not want that back.
+
+But I have stopped telling myself the divide is somewhere out there, between me and the builders who cannot code. It is in my own repositories. The useful move is not to feel clever about which side of the old wall I am on. It is to know, project by project, which parts of the thing I actually hold, and which parts would teach me how little I knew the moment they failed.
