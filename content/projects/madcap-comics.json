@@ -1,0 +1,38 @@
+{
+  "slug": "madcap-comics",
+  "title": "Madcap Comics",
+  "tagline": "Buy, collect, and battle your favourite comics in one place.",
+  "honestFraming": {
+    "whatItIs": "An online comic book store and collector platform for buying single issues, signed editions, and rare key issues. It also includes \"Battleground\", a no-login browser game where you pick a hero, the game picks an opponent, and dice-driven rounds play out narrated like a comic.",
+    "whatItIsNot": "Not a marketplace or auction site, and not a digital comic reader. It sells physical back issues and adds a bit of play on top - it isn't trying to be a full trading or grading platform."
+  },
+  "audience": {
+    "whoItsFor": [
+      "Comic collectors hunting back issues and key appearances",
+      "Readers after single issues and signed editions",
+      "Casual fans who want to play with the characters, not just buy"
+    ],
+    "whoItsNotFor": [
+      "People looking for digital/online comic reading",
+      "Buyers wanting a large general marketplace",
+      "Anyone after pull-list subscriptions or full collection-management software"
+    ]
+  },
+  "status": "building",
+  "currentState": "Online back-issue catalogue is live with browsing, single issues, signed editions and key issues. Battleground - a turn-based hero fighting game built into the store - is in active development, currently a single one-on-one mode with 24 characters.",
+  "lastUpdated": "2026-06-14",
+  "artefacts": [],
+  "experiments": [
+    {
+      "title": "Battleground (in-store game)",
+      "description": "Testing whether a no-login, shareable hero fighting game gives casual visitors a reason to return between purchases.",
+      "signalLookingFor": "Do players come back and start more fights? Does it drive return visits and shares ahead of a purchase?",
+      "status": "active"
+    }
+  ],
+  "links": {
+    "homepage": "https://madcapcomics.co.uk",
+    "buildOnRecordLog": "https://www.buildonrecord.com/log/sidewrks/madcap-comics"
+  },
+  "seoDescription": "Madcap Comics is an online comic book store for buying single issues, signed editions, and rare key issues, with Battleground - a no-login browser game where you pick a hero and battle through dice-driven rounds."
+}
