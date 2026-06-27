@@ -1,0 +1,37 @@
+{
+  "slug": "status-trace",
+  "title": "Status Trace",
+  "tagline": "A status page for small projects, without the professional price tag.",
+  "honestFraming": {
+    "whatItIs": "A self-hosted status page product. It shows the health of each component of your system, lets you open, update, and resolve incidents with the history kept on the page, and emails subscribers when something breaks and when it recovers. Multi-tenant: anyone can have their own page at their own subdomain, with their own branding and a built-in contrast check for accessibility. Magic-link sign-in, dark mode by default.",
+    "whatItIsNot": "Not a full monitoring or alerting platform, and not a replacement for uptime checks or on-call tooling. It tells your users what's broken; it doesn't decide that for you."
+  },
+  "audience": {
+    "whoItsFor": [
+      "Builders running small projects on the side",
+      "People who have looked at a status page and balked at the price",
+      "Anyone who wants a branded status page that costs almost nothing when idle"
+    ],
+    "whoItsNotFor": [
+      "Teams needing enterprise monitoring and alerting",
+      "Anyone wanting automated uptime detection out of the box",
+      "Projects that need a heavily managed, SLA-backed vendor"
+    ]
+  },
+  "status": "live",
+  "currentState": "Live at statustrace.com with components, incidents, email subscriptions, per-organisation branding, magic-link sign-in, and dark mode. Free, with a free tier that will stay. Being put in front of sidewrks readers as an experiment.",
+  "lastUpdated": "2026-06-27",
+  "artefacts": [],
+  "experiments": [
+    {
+      "title": "A product on sidewrks",
+      "description": "Putting a real product in front of sidewrks readers and asking them to try it, rather than keeping the site a private record.",
+      "signalLookingFor": "Do builders running small things on the side actually set up a status page, and tell me where it falls short?",
+      "status": "active"
+    }
+  ],
+  "links": {
+    "homepage": "https://statustrace.com"
+  },
+  "seoDescription": "Status Trace is a self-hosted status page for small projects: components, incidents, email subscriptions, and per-organisation branding, on infrastructure that costs almost nothing when nobody is looking."
+}

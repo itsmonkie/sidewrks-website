@@ -1,0 +1,41 @@
+---
+title: "I built the status page I didn't want to pay for"
+date: '2026-06-27'
+lastmod: '2026-06-27'
+tags: ['side-projects', 'building-in-public', 'announcement']
+draft: false
+summary: "I built a status page product because I didn't want to keep paying for one. That's true, but it isn't quite honest. Introducing Status Trace, and the experiment of putting a product on sidewrks."
+images: ['/static/images/i-built-the-status-page-i-didnt-want-to-pay-for.jpg']
+authors: ['default']
+---
+
+![I built the status page I didn't want to pay for](/static/images/i-built-the-status-page-i-didnt-want-to-pay-for.jpg)
+
+I built a status page product because I didn't want to keep paying for one.
+
+That's the short version, and it's true, but it isn't quite honest. The money was never really the issue. Atlassian's Statuspage costs more than I think a status page should, and for what it does it has always struck me as expensive for something fairly basic. But I run a handful of small projects. The subscription I was avoiding was not large. If saving money were the point, the sensible move was to find a free tier somewhere and get on with my day.
+
+I didn't do that. I built the whole thing instead. It's called Status Trace, and it's live at statustrace.com.
+
+A status page is the thing that tells your users what's broken when something is broken. Status Trace does that, self-hosted, on infrastructure that costs almost nothing when nobody is looking at it. The core of it is straightforward:
+
+- Components, so you can show the health of each part of your system on its own
+- Incidents you open, update, and resolve, with the history kept on the page
+- Email subscriptions, so people are told when something breaks and when it recovers
+- Per-organisation branding, with a built-in contrast check so your colours stay accessible
+- Magic-link sign-in, so there are no passwords to manage
+- Dark mode by default, with an accessible visual style
+
+I wanted one for rcordr. So I made one.
+
+I could have stopped there. A status page for my own projects needs exactly one tenant: me. Instead I built it so that anyone can have their own, at their own subdomain, with their own branding. That is a great deal more work than I needed to do for myself, and I want to be honest about why I did it.
+
+sidewrks has been quietly turning into something with people in it. I keep coming across builders running small things on the side, the same as me, and a status page is one of those grown-up pieces of infrastructure that feels out of proportion to a side project's budget. The professional version costs professional money. So I built the version other people could use too, and I'm putting it in front of the people reading this.
+
+This is a shift, and I notice it. sidewrks has always been a record rather than something I'm trying to grow. Now I'm introducing a product on it and asking people to try it. The honest framing is that this is an experiment, not a launch. I don't know if anyone wants this. "It's free, there will be a free tier forever, and it might grow if people find it useful" is the kind of sentence that can dress up a bet as generosity. It is partly a bet. It's also just true.
+
+What I keep noticing is the difference between building something for myself and building it for people I'm not sure are there. When it was for me, every decision was easy, because I was the only person I had to satisfy and I knew exactly what I wanted. The moment it became a thing other people might use, I started second-guessing parts of it that were fine the day before. That uncertainty is most of the reason side projects stay private. It is much more comfortable to build for an audience of one.
+
+So this is me not doing the comfortable thing. If you run something small, and you've ever looked at a status page and balked at the price, I'd like you to try it and tell me where it falls short. matt@sidewrks.com reaches me directly. I'm more interested in what's wrong with it than in whether you like it.
+
+I genuinely don't know how this goes. It might turn out that nobody building on the side wants a status page badly enough to set one up, and that the thing I found useful is only ever useful to me. If that's what happens, I'll write that down too. The record doesn't only get to keep the parts that worked.

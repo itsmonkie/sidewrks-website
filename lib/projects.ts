@@ -3,12 +3,14 @@ import rcordr from '@/content/projects/rcordr.json'
 import buildOnRecord from '@/content/projects/build-on-record.json'
 import sidewrks from '@/content/projects/sidewrks.json'
 import madcapComics from '@/content/projects/madcap-comics.json'
+import statusTrace from '@/content/projects/status-trace.json'
 
 const projects: Project[] = [
   rcordr as Project,
   buildOnRecord as Project,
   sidewrks as Project,
   madcapComics as Project,
+  statusTrace as Project,
 ]
 
 export function getAllProjects(): Project[] {
