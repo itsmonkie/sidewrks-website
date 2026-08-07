@@ -5,7 +5,13 @@ import 'remark-github-blockquote-alert/alert.css'
 import { Space_Grotesk, Montserrat } from 'next/font/google'
 import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import CookieConsent from '@/components/CookieConsent'
-import GoogleAnalytics from '@/components/GoogleAnalytics'
+import { ConsentProvider, GoogleAnalytics } from '@itsmonkie/web-shared'
+import {
+  GA_MEASUREMENT_ID,
+  PRODUCTION_HOSTS,
+  CONSENT_STORAGE_KEY,
+  CONSENT_LEGACY_KEYS,
+} from '@/lib/analytics-config'
 import { SearchProvider, SearchConfig } from 'pliny/search'
 import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
@@ -105,16 +111,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
       <body className="bg-gray-50 pl-[calc(100vw-100%)] text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100">
         <ThemeProviders>
-          <GoogleAnalytics />
-          <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
-          <SectionContainer>
-            <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
-              <Header />
-              <main className="mb-auto">{children}</main>
-            </SearchProvider>
-            <Footer />
-          </SectionContainer>
-          <CookieConsent />
+          <ConsentProvider
+            measurementId={GA_MEASUREMENT_ID}
+            storageKey={CONSENT_STORAGE_KEY}
+            legacyKeys={CONSENT_LEGACY_KEYS}
+          >
+            {/* GA loads only when ALL of: analytics consent accepted, a
+              measurement ID is present, the host is on the production
+              allowlist, and the deployment environment is not preview or
+              development. envSignal is read SERVER-side here and passed down;
+              undefined is allowed and degrades to hostname-only gating, so a
+              missing signal can never cause silent under-collection. */}
+            <GoogleAnalytics
+              measurementId={GA_MEASUREMENT_ID}
+              productionHosts={PRODUCTION_HOSTS}
+              envSignal={process.env.VERCEL_ENV}
+            />
+            <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
+            <SectionContainer>
+              <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
+                <Header />
+                <main className="mb-auto">{children}</main>
+              </SearchProvider>
+              <Footer />
+            </SectionContainer>
+            <CookieConsent />
+          </ConsentProvider>
         </ThemeProviders>
       </body>
     </html>
