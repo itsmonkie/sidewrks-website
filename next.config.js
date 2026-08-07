@@ -66,6 +66,9 @@ module.exports = () => {
   return plugins.reduce((acc, next) => next(acc), {
     output,
     basePath,
+    // @itsmonkie/web-shared ships TypeScript source with no build step, so
+    // Next must transpile it as part of this app's build.
+    transpilePackages: ['@itsmonkie/web-shared'],
     reactStrictMode: true,
     trailingSlash: false,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
