@@ -1,0 +1,63 @@
+name: web-shared currency
+
+# Fails when this repo's pinned @itsmonkie/web-shared version has fallen behind
+# the package's latest release (itsmonkie/rcordr#1098 AC#5).
+#
+# Per-repo by design, decided 2026-08-08: each consumer checks itself. The
+# pinned version is read from a file in this checkout and web-shared is public,
+# so the built-in GITHUB_TOKEN is sufficient. No PAT, no shared secret, and no
+# cross-repo access.
+#
+# KNOWN AND ACCEPTED GAP: if this workflow is itself disabled or broken, this
+# repo reports nothing and looks up to date. A central rollup would have caught
+# that, and was deliberately not built — see #1098.
+on:
+  schedule:
+    - cron: "0 9 * * 1" # Mondays, 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check the pinned web-shared version
+        id: check
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MANIFEST_PATH: package.json
+          TOLERANCE_DAYS: "14"
+        run: node scripts/check-web-shared-current.mjs | tee currency.txt
+
+      - name: Open or update the tracking issue
+        if: steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          TITLE="Pinned @itsmonkie/web-shared version is behind"
+          BODY=$'This repo'"'"'s pinned `@itsmonkie/web-shared` version is behind the latest release, or could not be verified.\n\n```\n'"$(cat currency.txt)"$'\n```\n\nPinned tags do not update themselves. If Renovate is opening bump PRs they need merging; if it is not, that is the more important finding — automated bumping assumes success, and this check is the only thing that detects failure.\n\n**A `COULD NOT VERIFY` result above is a failure, not a pass.** It means the check could not read the upstream version, so this repo'"'"'s currency is unknown.\n\nContext: itsmonkie/rcordr#1098 AC#5.'
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
+          fi
+
+      - name: Fail the run
+        if: steps.check.outcome == 'failure'
+        run: |
+          echo "web-shared currency check failed - see the tracking issue."
+          exit 1
